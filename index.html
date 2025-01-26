@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="glide.core.min.css" />
+    <link rel="stylesheet" href="glide.theme.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box1">
+        <img src="Images/imageA.png" alt="Add Color to Your Masterpiece" />
+        <div class="inside-image">
+          <p>
+            Add color to your <br />
+            masterpiece
+          </p>
+          <button class="shop-button">Shop Now</button>
+        </div>
+      </div>
+      <div class="box2">
+        <img src="Images/imageB.png" alt="GLIDE" />
+        <p class="image-title">GLIDE</p>
+      </div>
+      <div class="box3">
+        <img src="Images/imageB.png" alt="Magnetic Core Bobbin" />
+        <p class="image-title">MAGNETIC CORE BOBBIN</p>
+      </div>
+      <div class="box4">
+        <img src="Images/imageB.png" alt="Premium Stabilizer" />
+        <p class="image-title">PREMIUM STABILIZER</p>
+      </div>
+    </div>
+
+    <h2 class="featured-section">FEATURED PRODUCTS</h2>
+    <div class="flex-container">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <div class="glide__slide">
+              <img src="Images/imageC.png" alt="Product 1" />
+              <p class="image-title2">EMBRODIERY STABILIZER</p>
+            </div>
+            <div class="glide__slide">
+              <img src="Images/imageC.png" alt="Product 2" />
+              <p class="image-title2">CUBBIE GRY ELEPHANT</p>
+            </div>
+            <div class="glide__slide">
+              <img src="Images/imageC.png" alt="Product 3" />
+              <p class="image-title2">KIMBERBELL CUP OF CHEER</p>
+            </div>
+            <div class="glide__slide">
+              <img src="Images/imageC.png" alt="Product 4" />
+              <p class="image-title2">KIMBERKELL TWO SCOOPS</p>
+            </div>
+            <div class="glide__slide">
+              <img src="Images/imageC.png" alt="Product 5" />
+              <p class="image-title2">LITTLE GIRAPHE</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            prev
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section company-info">
+          <h2 class="brand">hab+dash</h2>
+          <p>by Fil-Tec</p>
+          <p>
+            Hab+Dash is a division of the filament technologies company,Fil-Tec,
+            Inc. and is a proud U.S.A. manufacturer of sewing threads and
+            pre-wound bobbins. Our wholesale site is dedicated to offering our
+            manufactured products to commercial embroiderers, long-arm quilters,
+            and retail sewing shops. In addition to the products we manufacture,
+            we have sourced the best products and accessories to benefit our
+            customers.
+          </p>
+          <p>© 2024 Hab+Dash. All rights reserved.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>SUPPORT</h3>
+          <ul>
+            <li><a href="#">Stitch Rewards</a></li>
+            <li><a href="#">Core Return Program</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Online Dealers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>USEFUL LINKS</h3>
+          <ul>
+            <li><a href="#">Digital Color Card</a></li>
+            <li><a href="#">Which Bobbin Fits?</a></li>
+            <li><a href="#">Color Conversion</a></li>
+            <li><a href="#">Stabilizer Applications</a></li>
+            <li><a href="#">Selecting a Stabilizer</a></li>
+            <li><a href="#">New Site Features</a></li>
+            <li><a href="#">Institute of Heraldry</a></li>
+            <li><a href="#">Kimberbell Solids</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>ABOUT US</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Show Schedule</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3>NEWSLETTER SIGN UP</h3>
+          <p>
+            Subscribe to our newsletter to unlock exclusive access to
+            promotions, new product launches, and more!
+          </p>
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        startAt: 0,
+        perView: 4,
+        breakpoints: {
+          1024: { perView: 3 },
+          800: { perView: 2 },
+          600: { perView: 1 },
+        },
+      };
+      new Glide(".glide", config).mount();
+    </script>
+  </body>
+</html>

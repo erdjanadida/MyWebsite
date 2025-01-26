@@ -1,0 +1,23 @@
+// Import the sass:color module for color manipulation functions
+@use "sass:color";
+
+$primary-color: #3498db;
+
+body {
+  background-color: #f0f0f0;
+  color: $primary-color;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: color.adjust($primary-color, $lightness: -10%);
+  }
+}
